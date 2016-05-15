@@ -1,1 +1,4 @@
-prueba del contenido json
+{
+    "c1":["Dear Hotel","Vincci The Mint"],
+    "c2":["Vincci The Mint","Exe Central"]
+}
