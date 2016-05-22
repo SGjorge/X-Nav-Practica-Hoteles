@@ -1,7 +1,7 @@
 # X-Nav-Practica-Hoteles
 Repositorio para la práctica final de DAT/AT. Curso 2015-2016
 
-# [muestra practica en gh-pages](sgjorge.github.io/X-Nav-Practica-Hoteles)
+# [muestra practica en gh-pages](https://sgjorge.github.io/X-Nav-Practica-Hoteles)
 
 # Funcionalidad optativa
     -terceras APIs: Jquery-ui, GoogleMaps
