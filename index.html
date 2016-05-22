@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="us">
+	<head>
+		<meta charset="utf-8"/>
+		<html lang="en" manifest="/cache.manifest">
+		<!-- Leaflet -->
+		<link rel=StyleSheet href="leaflet/leaflet.css">
+		<script src="leaflet/leaflet.js"></script>
+		<script src="leaflet/leaflet-src.js"></script>
+		<!-- Jquery -->
+		<script src="js/jquery-1.12.3.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/github.js"></script>
+		<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="jquery-ui.theme.min.css">
+		<title>Hoteles - Practica final</title>
+	</head>
+	<body>
+	    <!-- Navigation -->
+	    <img src="img/MADRID-banner.jpg" width="100%"></img>
+		<nav class="navbar navbar-inverse navbar-custom" role="navigation">
+		   <div class="container-fluid">
+		        <!-- Brand and toggle get grouped for better mobile display -->
+		        <div class="navbar-header">
+		            <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+		            <a class="navbar-brand" href="index.html">Alojamientos en Madrid</a>
+		        </div>
+		        <!-- Collect the nav links, forms, and other content for toggling -->
+		        <div class="collapse navbar-collapse">
+		             <ul class="nav navbar-nav">
+		                <li>
+		                    <a id="mn">Principal</a>
+		                </li>
+		                <li>
+		                    <a id="gst">Gestion</a>
+		                </li>
+		                <li>
+		                    <a id="usr">Colecciones</a>
+		                </li>
+		                <li>
+		                    <a id="gplus">Hotels and users</a>
+		                </li>
+		            </ul>
+		            <button id="sg" type="button" class="btn btn-default navbar-btn navbar-right">Sign up <span class="glyphicon glyphicon-user"></span></button>
+		            <button id="so" type="button" class="btn btn-default navbar-btn navbar-right">Sign out</button>
+		        </div>
+		    </div>
+		    <!-- /.container -->
+		</nav>
+		<div class="jumbotron well" id="sing-in">
+			<div class="page-header">
+    			<h1>Alojamientos en Madrid</h1>      
+  			</div>
+			<div>token<input id="tk" type="password"></input></div>
+			<div>user github<input id="ghb"></input></div>
+			<div>repository<input id="rp"></input></div>
+		</div>
+		<!-- gestion -->
+		<div id="gestion" class="row" hidden="hidden">
+			<div class="jumbotron well">
+				<button id="publish">publicar</button>
+				<button id="deleteSelected">vaciar selección</button>
+				<button id="addMapToCollection">añadir mapa a la colección</button>
+				<div>nombre de la coleccion:<input id="collectionName"></input></div>
+				<div class="row">
+					<div id="hotelsSelected" class="ui-widget-header col-md-6">hoteles seleccionados:</div>
+					<div class="col-md-6" id="hotelsMenu">elementos a seleccionar:</div>
+				</div>
+				<div id="hotelsMapSelected">hoteles seleccionados en el mapa:</div>
+			</div>
+			<hr class="intro-divider">
+			<div class="jumbotron well">
+				<button id="addUser">add user</button>
+				<h1 id="hotelSel">hotel seleccionado</h1>
+				<div>id google+:
+					<input id="idG"></input>
+				</div>
+			</div>
+		</div>
+		<!-- g+ -->
+		<div class="jumbotron well" id="ghotels" hidden="hidden">
+			<h1>usuarios asignados a hoteles</h1>
+			<div id="usersDown"></div>
+			<div id="usersSelecteds"></div>
+		</div>
+		<!-- user -->
+		<div class="jumbotron well" id="user" class="row" hidden="hidden">
+			<div id="collections">Listado de colecciones</div>
+			<div>Listado de hoteles seleccionados en la coleccion</div>
+			<div id="map-user"></div>
+		</div>
+		<!-- main -->
+		<div class="jumbotron well" id="main" hidden="hidden">
+			<div id="header" class="row">
+				<h1 id="hotel-selected"></h1>
+				<div class="col-md-8" id="map"></div><br>
+				<div class="col-md-4" id="hoteles">
+					<button class="btn btn-default btn-block" id="reload-hotels">cargar</button>
+					<div id="scroll" class="scroll"></div>
+				</div>
+			</div>
+			<hr class="intro-divider">
+			<div id="hotel" class="row">
+				<div class="col-md-5" id="infor"></div>
+				<div class="col-md-7 carousel slide" data-ride="carousel" id="carrousel">
+					<div class='item active'></div>
+					<div class="carousel-inner" role="listbox">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
