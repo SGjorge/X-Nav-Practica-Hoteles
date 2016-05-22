@@ -1,0 +1,43 @@
+body{
+	margin: 2% 2% 2% 2%;
+	text-align: center;
+	background: rgba(226,226,226,1);
+	background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 51%, rgba(219,219,219,1) 64%, rgba(254,254,254,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(51%, rgba(209,209,209,1)), color-stop(64%, rgba(219,219,219,1)), color-stop(100%, rgba(254,254,254,1)));
+	background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 51%, rgba(219,219,219,1) 64%, rgba(254,254,254,1) 100%);
+	background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 51%, rgba(219,219,219,1) 64%, rgba(254,254,254,1) 100%);
+	background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 51%, rgba(219,219,219,1) 64%, rgba(254,254,254,1) 100%);
+	background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(209,209,209,1) 51%, rgba(219,219,219,1) 64%, rgba(254,254,254,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 ); 
+}
+
+.navbar-brand{
+	margin-right: 40%;
+}
+
+.navbar-right {
+	margin-right: 1%;
+}
+
+#sing-in ,#main ,#gestion ,#user, #ghotels{
+	margin-top: 5%;
+}
+
+#map ,#map-user{
+	height:250px;
+}
+
+.autocomplete{
+	max-width: 15%;
+	text-align: left;
+}
+
+.scroll, .drag-container, #hotelsSelected{
+	height:200px;
+	overflow: scroll;
+}
+
+.h {
+	height:325px;
+	overflow: scroll;
+}
